@@ -1,0 +1,8 @@
+img {
+  max-width: 100%;
+  display: block;
+  width: 450px;
+  height: 450px;
+  object-fit: contain;
+  object-position: center ;
+}
