@@ -1,0 +1,21 @@
+.container {
+  background-image: url("../images/montain.jpg");
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 700px;
+  height: 600px;
+
+   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/montain.jpg"); */
+  /* background-image: url("../images/montain.jpg");
+  background-color: rgba(0,0,0,0.5);
+
+  background-blend-mode: multiply; */
+
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/montain.jpg") center / cover no-repeat; */
+}
+
+.title {
+  /* background-color: aqua; */
+}
