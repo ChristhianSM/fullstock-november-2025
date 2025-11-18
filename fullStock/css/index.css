@@ -1,0 +1,14 @@
+@import url('1_foundation/tokens.css');
+@import url('1_foundation/reset.css');
+@import url('1_foundation/global.css');
+ 
+@import url('2_layout/container.css');
+@import url('2_layout/section.css');
+ 
+@import url('3_components/header.css');
+@import url('3_components/footer.css');
+ 
+@import url('4_utilities/utilities.css');
+
+@import url('5_pages/home.css');
+

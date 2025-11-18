@@ -1,12 +1,12 @@
-main {
+/* main {
   margin: 0 auto;
   max-width: 80rem;
-}
+} */
 
 .hero {
   max-width: 100%;
   height: 34rem;
-  background-image: url("../images/hero.jpg");
+  background-image: url("../../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ main {
   margin-bottom: 1rem;
 }
 
-.hero__text {
+.hero__description {
   font-weight: 400;
   font-style: normal;
   font-size: 1.25rem;
@@ -50,9 +50,8 @@ main {
   display: inline-block;
 }
 
-.categories__section {
+.categories {
   margin: 3rem auto;
-  padding: 0 1rem;
 }
 
 .categories__title {
@@ -74,19 +73,19 @@ main {
   margin-bottom: 2.5rem;
 }
 
-.categories__products {
+.categories__list {
   display: flex;
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
 }
 
-.categories__product {
+.category {
   max-width: 24rem;
   max-height: 30rem;
 }
 
-.categories__product-img {
+.category__img {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
@@ -94,60 +93,56 @@ main {
   margin-bottom: 1rem;
 }
 
-.categories__product-title {
+.category__title {
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
-.line-horizontal {
-  border: 1px solid rgba(217, 217, 224, 1);
-}
-
-.categories__product-text {
+.category__description {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 400;
   color: rgba(96, 100, 108, 1);
 }
 
-.calidad__section {
+.quality {
   padding: 3rem 1rem;
   background-color: rgba(0, 0, 85, 0.02);
 }
 
-.calidad {
+.quality__list {
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: 2rem;
 }
 
-.calidad__title {
+.quality__title {
   text-align: center;
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 3rem;
 }
 
-.calidad__card {
+.quality__card {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.calidad__card-icon {
+.quality__card-icon {
   margin-bottom: 1.5rem;
 }
 
-.calidad__card-title {
+.quality__card-title {
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-bottom: 0.5rem;
 }
 
-.calidad__card-text {
+.quality__card-description {
   font-size: 0.875rem;
   line-height: 1.25rem;
   margin-bottom: 0.5rem;
@@ -156,9 +151,9 @@ main {
 
 @media (min-width: 768px) {
 
-  main {
+  /* main {
     padding: 0 1.5rem;
-  }
+  } */
 
   .hero__container {
     padding: 0 1.5rem;
@@ -174,34 +169,34 @@ main {
     line-height: 1.75rem;
   }
 
-  .categories__products {
+  .categories__list {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: nowrap;
     margin-bottom: ;
   }
 
-  .categories__product {
+  .category {
     flex: 1;
   }
 
-  .calidad {
+  .quality__list {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .calidad__card {
+  .quality__card {
     width: calc((100% - 2rem)/2);
   }
 }
 
 @media (min-width: 1440px) {
-  main {
+  /* main {
     padding: 0 5rem;
-  }
+  } */
 
-  .calidad__card {
+  .quality__card {
     flex: 1;
   }
 
