@@ -1,0 +1,25 @@
+.quality {
+  background-color: var(--muted-background);
+}
+
+.quality__title {
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+}
+
+.quality__list {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .quality__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

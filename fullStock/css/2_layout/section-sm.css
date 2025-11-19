@@ -1,0 +1,18 @@
+.section-sm-sm {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+ 
+@media (min-width: 40rem) {
+  .section-sm {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+ 
+@media (min-width: 64rem) {
+  .section-sm {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
