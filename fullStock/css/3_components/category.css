@@ -1,6 +1,5 @@
 .category {
   max-width: 24rem;
-  max-height: 30rem;
 }
 
 .category__img {
@@ -16,7 +15,6 @@
 }
 
 .category__title {
-  color: var(--black);
   font-size: 1rem;
   line-height: 1.5rem;
   font-weight: 600;

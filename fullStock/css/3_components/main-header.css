@@ -2,8 +2,9 @@
 .header {
   margin: 0 auto;
   max-width: 80rem;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  height: 4rem;
+  /* padding-top: 0.75rem;
+  padding-bottom: 0.75rem; */
   display: flex;
   justify-content: space-between;
   align-items: center;
