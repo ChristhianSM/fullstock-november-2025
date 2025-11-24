@@ -1,11 +1,13 @@
 .nav-item{
-  padding: 0.75rem;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  
 }
 
 .nav-item a {
+  display: block;
   text-decoration: none;
+  padding: 0.75rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .nav-item:hover {

@@ -18,8 +18,9 @@
 @import url('3_components/main-footer.css');
 @import url('3_components/links-group.css');
 @import url('3_components/newsletter-form.css');
+@import url('3_components/content.css');
 @import url('3_components/footer.css');
- 
+
 @import url('4_utilities/utilities.css');
 
 @import url('5_pages/home.css');

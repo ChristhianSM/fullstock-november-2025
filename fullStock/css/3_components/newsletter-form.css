@@ -18,9 +18,16 @@
 }
 
 .newsletter-form-email {
-  border: 1px solid rgba(205, 206, 214, 1);
+  border: 1px solid var(--border);
   height: 2.5rem;
   padding: 0.5rem 0.75rem;
   border-radius: 0.75rem;
+  background-color: var(--background);
   flex-grow: 1;
+}
+
+.newsletter-form-email:focus {
+  outline: 2px solid var(--outline);
+  border-color: var(--outline);
+  outline-offset: 1px;
 }
