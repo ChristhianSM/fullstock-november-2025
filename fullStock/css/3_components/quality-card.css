@@ -21,9 +21,9 @@
 }
 
 @media (min-width: 768px) {
-  .quality__card {
+  /* .quality__card {
     width: calc((100% - 2rem)/2);
-  }
+  } */
 }
 
 @media (min-width: 1440px) {

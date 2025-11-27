@@ -10,16 +10,28 @@
 }
 
 .quality__list {
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
+  
+  display: grid;
   text-align: center;
   gap: 2rem;
 }
 
 @media (min-width: 768px) {
   .quality__list {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
+    /* flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+  }
+}
+
+@media (min-width: 1440px) {
+  .quality__list {
+    grid-template-columns: repeat(4, 1fr);
+    /* flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; */
   }
 }
