@@ -1,5 +1,6 @@
 .sidebar-layout {
   display: grid;
+  gap: 2rem;
 }
 
 @media (min-width: 1440px) {

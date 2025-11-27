@@ -1,0 +1,36 @@
+.product__card-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid var(--separator);
+    border-radius: 0.75rem;
+}
+
+.product__image {
+    aspect-ratio: 3 / 4;
+    background-color: var(--muted-background);
+}
+
+.product__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.2s;
+}
+
+.product__container-text {
+    padding: 1rem;
+}
+
+.product__title, .product__description {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.product__description {
+   color: var(--muted-foreground);
+}
