@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky</title>
+    <style>
+      html,
+      body {
+        height: 150%;
+        padding-top: 48px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .sticky-hand {
+        font-size: 3em;
+        position: sticky;
+        top: 0;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sticky-hand">👋🏼</div>
+    <p>Conoce a "Sticky Hand"</p>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky</title>
+    <style>
+      html,
+      body {
+        height: 150%;
+        padding-top: 48px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .container {
+        width: 200px;
+        height: 200px;
+        border: 1px solid Tomato;
+        margin: 0 auto;
+      }
+      .sticky-hand {
+        font-size: 3em;
+        position: sticky;
+        top: 0;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sticky-hand">👋🏼</div>
+      <p>Sticky Hand atrapada en container</p>
+    </div>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky</title>
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      section:last-child {
+        /* margen artificial para obligar el scroll */
+        margin-bottom: 600px;
+      }
+
+      section {
+        display: flex;
+        align-items: flex-start;
+        gap: 32px;
+        margin-bottom: 16px;
+
+        /* Descomenta la siguiente línea para develar el truco */
+        border: 1px solid tomato;
+      }
+
+      section p {
+        flex: 1;
+      }
+
+      section h2 {
+        /* Aquí la magia */
+        position: sticky;
+        top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Section 1</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+        voluptatem. Temporibus sint tempore itaque deleniti, modi blanditiis
+        veniam aliquam fugiat architecto commodi libero nostrum officia voluptas
+        illo, cum quo quod nesciunt repudiandae necessitatibus in minus!
+        Explicabo quisquam itaque dolor, aliquam, soluta ipsum consequuntur a
+        perspiciatis aperiam fuga rerum voluptas aut sapiente eius fugit.
+        Cupiditate vitae aspernatur dolorum. Quod, voluptate corporis! Possimus
+        vero quae cum quod sequi, non harum eos nihil nobis ipsam culpa odit
+        saepe illo labore. Unde, tempore. Voluptatum ullam voluptates dolor
+        officia maxime magni aliquid iusto dignissimos doloremque eum deleniti
+        ipsum, omnis aperiam vel corporis quod voluptatem animi.
+      </p>
+    </section>
+    <section>
+      <h2>Section 2</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+        voluptatem. Temporibus sint tempore itaque deleniti, modi blanditiis
+        veniam aliquam fugiat architecto commodi libero nostrum officia voluptas
+        illo, cum quo quod nesciunt repudiandae necessitatibus in minus!
+        Explicabo quisquam itaque dolor, aliquam, soluta ipsum consequuntur a
+        perspiciatis aperiam fuga rerum voluptas aut sapiente eius fugit.
+        Cupiditate vitae aspernatur dolorum. Quod, voluptate corporis! Possimus
+        vero quae cum quod sequi, non harum eos nihil nobis ipsam culpa odit
+        saepe illo labore. Unde, tempore. Voluptatum ullam voluptates dolor
+        officia maxime magni aliquid iusto dignissimos doloremque eum deleniti
+        ipsum, omnis aperiam vel corporis quod voluptatem animi.
+      </p>
+    </section>
+    <section>
+      <h2>Section 3</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque,
+        voluptatem. Temporibus sint tempore itaque deleniti, modi blanditiis
+        veniam aliquam fugiat architecto commodi libero nostrum officia voluptas
+        illo, cum quo quod nesciunt repudiandae necessitatibus in minus!
+        Explicabo quisquam itaque dolor, aliquam, soluta ipsum consequuntur a
+        perspiciatis aperiam fuga rerum voluptas aut sapiente eius fugit.
+        Cupiditate vitae aspernatur dolorum. Quod, voluptate corporis! Possimus
+        vero quae cum quod sequi, non harum eos nihil nobis ipsam culpa odit
+        saepe illo labore. Unde, tempore. Voluptatum ullam voluptates dolor
+        officia maxime magni aliquid iusto dignissimos doloremque eum deleniti
+        ipsum, omnis aperiam vel corporis quod voluptatem animi.
+      </p>
+    </section>
+  </body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sticky</title>
+    <style>
+      html,
+      body {
+        height: 150%;
+        padding-top: 48px;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .wrapper {
+        display: flex;
+        gap: 8px;
+      }
+      .container {
+        height: 300px;
+        border: 1px solid Tomato;
+        flex-grow: 1;
+      }
+      .sticky-hand {
+        font-size: 3em;
+        position: sticky;
+        top: 0;
+      }
+      .top-0 {
+        top: 0;
+      }
+      .top-32 {
+        top: 32px;
+      }
+      .top--32 {
+        top: -32px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="sticky-hand top-32">👋🏼</div>
+        <code>top: 24px</code>
+      </div>
+      <div class="container">
+        <div class="sticky-hand top-0">👋🏼</div>
+        <code>top: 0</code>
+      </div>
+      <div class="container">
+        <div class="sticky-hand top--32">👋🏼</div>
+        <code>top: -24px</code>
+      </div>
+    </div>
+  </body>
+</html> -->
