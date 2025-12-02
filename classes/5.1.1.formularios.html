@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .input-email {
+        user-select: none;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <label for="name">Nombre</label>
+      <input type="text" id="name" autocomplete="names" />
+      <label>Apellidos <input type="text" autofocus /></label>
+      <br />
+      <label for="email">email</label>
+      <input
+        class="input-email"
+        type="email"
+        id="email"
+        required
+        name="email"
+        placeholder="Ingresa Email"
+        value="christhian252sada4@gmail.com"
+        readonly
+      />
+      <input type="color" name="" id="" />
+      <input type="date" name="" id="" />
+      <input type="url" name="" id="" />
+      <input type="tel" name="" id="" />
+      <input type="number" max="10" value="1" min="1" name="" id="" />
+      <input type="search" name="" id="" />
+      <button type="submit">Enviar</button>
+
+      <br />
+      <br />
+
+      <p>¿Qué sistema operativo usas?</p>
+      <label
+        ><input type="radio" name="sistema" value="windows" />Windows xp</label
+      >
+      <label><input type="radio" name="sistema" value="macos" />MacOS</label>
+      <label><input type="radio" name="sistema" value="linux" />Linux</label>
+      <label><input type="radio" name="sistema" value="otro" />Otro</label>
+
+      <br />
+      <br />
+      <label><input type="checkbox" name="html" value="si" />HTML</label>
+      <label><input type="checkbox" name="css" value="si" />CSS</label>
+      <label><input type="checkbox" name="js" value="si" />JavaScript</label>
+      <label><input type="checkbox" name="node" value="si" />Node.js</label>
+      <label><input type="checkbox" name="express" value="si" />Express</label>
+      <label
+        ><input type="checkbox" name="postgresql" value="si" />PostgreSQL</label
+      >
+      <label><input type="checkbox" name="react" value="si" />React</label>
+      <label><input type="checkbox" name="tw" value="si" />Tailwind CSS</label>
+
+      <br />
+      <br />
+
+      <fieldset>
+        <legend>¿Qué tecnologías dominas?</legend>
+        <label><input type="checkbox" name="html" value="si" />HTML</label>
+        <label><input type="checkbox" name="css" value="si" />CSS</label>
+        <label><input type="checkbox" name="js" value="si" />JavaScript</label>
+        <label><input type="checkbox" name="node" value="si" />Node.js</label>
+        <label
+          ><input type="checkbox" name="express" value="si" />Express</label
+        >
+        <label
+          ><input
+            type="checkbox"
+            name="postgresql"
+            value="si"
+          />PostgreSQL</label
+        >
+        <label><input type="checkbox" name="react" value="si" />React</label>
+        <label
+          ><input type="checkbox" name="tw" value="si" />Tailwind CSS</label
+        >
+      </fieldset>
+
+      <br />
+      <br />
+      <label for="pais">Pais de nacimiento:</label>
+      <select id="pais" name="pais">
+        <option value="">Selecciona uno</option>
+        <option value="AR" selected>Argentina</option>
+        <option value="BO">Bolivia</option>
+        <option value="BR">Brasil</option>
+        <option value="CL">Chile</option>
+        <option value="CO">Colombia</option>
+        <option value="CR">Costa Rica</option>
+        <option value="CU">Cuba</option>
+        <option value="DO" selected>República Dominicana</option>
+        <option value="EC">Ecuador</option>
+        <option value="SV">El Salvador</option>
+        <option value="GT">Guatemala</option>
+        <option value="HN">Honduras</option>
+        <option value="MX">México</option>
+        <option value="NI">Nicaragua</option>
+        <option value="PA">Panamá</option>
+        <option value="PY">Paraguay</option>
+        <option value="PE">Perú</option>
+        <option value="PR">Puerto Rico</option>
+        <option value="UY">Uruguay</option>
+        <option value="VE">Venezuela</option>
+      </select>
+
+      <br /><br />
+      <textarea style="resize: horizontal" name="" id="" cols="50" rows="20">
+ christhian 25</textarea
+      >
+      <button type="submit" name="button2" value="boton">Apretame</button>
+    </form>
+
+    <br />
+    <br />
+    <form>
+      <label for="title">Título del post:</label>
+      <input id="title" name="title" required />
+
+      <!-- El servidor sabrá qué acción tomar basado en el valor de "action" -->
+      <button type="submit" name="action" value="draft">
+        Guardar Borrador
+      </button>
+      <button type="submit" name="action" value="publish">Publicar</button>
+    </form>
+  </body>
+</html>
