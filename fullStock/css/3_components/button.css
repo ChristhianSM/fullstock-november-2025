@@ -14,6 +14,9 @@
   background-color: var(--primary-background);
   cursor: pointer;
   border: none;
+
+  /* Transitions */
+  transition: background-color 1s ease;
 }
 
 .button svg {

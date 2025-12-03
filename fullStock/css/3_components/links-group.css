@@ -25,13 +25,13 @@
   font-size: 0.875rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 40rem) {
   .links-group {
       flex-wrap: nowrap;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 64rem) {
   .links-group {
       flex-wrap: nowrap;
       flex: 1;

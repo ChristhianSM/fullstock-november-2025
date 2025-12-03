@@ -5,7 +5,10 @@
 .main-footer__container {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgba(217, 217, 224, 1);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
 }
 
 .main-footer__copyright {
@@ -15,7 +18,7 @@
   line-height: 1.25rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 64rem) {
   .main-footer__container {
     flex-direction: row;
   }

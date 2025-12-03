@@ -20,13 +20,13 @@
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 40rem) {
   /* .quality__card {
     width: calc((100% - 2rem)/2);
   } */
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 64rem) {
   .quality__card {
     flex: 1;
   }
