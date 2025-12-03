@@ -43,8 +43,16 @@ input, select, textarea {
   border-radius: .75rem;
 }
 
+input, select {
+  height: 40px;
+}
+
 select, textarea {
   border-radius: .375rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--primary-background);
 }
 
 input:focus, select:focus, textarea:focus {

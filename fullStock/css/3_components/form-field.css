@@ -1,0 +1,47 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field__container-email {
+  border-bottom: 1px solid var(--separator);
+  margin-bottom: 1.5rem;
+}
+
+.form-field__title {
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-field__input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.form-field__container-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-field__separator {
+  margin: .5rem 0 1.5rem 0;
+  background-color: var(--separator);
+}
+
+@media (min-width: 40rem) {
+  .form-field__container-input {
+    flex-direction: row;
+  }
+
+  .form-field__input-group  {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-field__container-input .form-field__input-group {
+    flex: 1;
+  }
+}
