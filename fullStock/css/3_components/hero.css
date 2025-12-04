@@ -18,12 +18,40 @@
   text-align: center;
   padding: 0 1rem;
 }
-
+.hero__container button{
+  opacity: 0;
+  animation: aparecer 1s ease-in-out;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+  
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .hero__title {
   font-weight: 700;
   font-size: 2.25rem;
   line-height: 2.5rem;
   margin-bottom: 1rem;
+  animation: deslizar-izquierda 0.8s ease-in-out;
+}
+
+@keyframes deslizar-izquierda {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .hero__description {
@@ -32,6 +60,17 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 2rem;
+  animation: deslizar-derecha 0.8s ease-in-out;
+}
+@keyframes deslizar-derecha {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 40rem) {
