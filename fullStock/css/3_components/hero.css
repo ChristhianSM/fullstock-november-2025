@@ -24,6 +24,8 @@
   font-size: 2.25rem;
   line-height: 2.5rem;
   margin-bottom: 1rem;
+
+  animation: move-left 1.5s ease-in-out;
 }
 
 .hero__description {
@@ -32,6 +34,16 @@
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: 2rem;
+
+  animation: move-right 1.5s ease-in-out;
+}
+
+.hero__container .button {
+  animation-name: appear;
+  animation-delay: 0.5s;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: backwards;
 }
 
 @media (min-width: 40rem) {
@@ -51,3 +63,40 @@
     line-height: 1.75rem;
   } 
 }
+
+@keyframes move-left {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes move-right {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+

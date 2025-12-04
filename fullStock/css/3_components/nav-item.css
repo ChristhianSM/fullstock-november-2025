@@ -1,5 +1,8 @@
 .nav-item{
   display: block;
+
+  /* transitions */
+  transition: background-color 0.5s ease;
 }
 
 .nav-item a {
@@ -9,6 +12,8 @@
   padding-top: .875rem;
   padding-bottom: .875rem;
   font-size: .875rem;
+
+  
 }
 
 .nav-item:hover {

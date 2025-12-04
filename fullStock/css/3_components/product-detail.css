@@ -52,6 +52,7 @@
 
 .product-detail__button {
   width: 100%;
+  animation: ripple 2s ease-in-out infinite backwards;
 }
 
 .product-detail__characteristics {
@@ -72,7 +73,6 @@
   line-height: 1.5rem;
   color: var(--muted-foreground);
 }
-
 
 @media (min-width: 40rem) {
   .product-detail {
@@ -102,4 +102,9 @@
   .product-detail__button-container {
     max-width: 20rem;
   }
+}
+
+@keyframes ripple {
+  0%   { box-shadow: 0 0 0 0 rgba(0, 0, 0, .3); }
+  100% {  box-shadow: 0 0 0 10px rgba(255,255,255,0); }
 }
