@@ -29,6 +29,9 @@
 @import url('3_components/product.css');
 @import url('3_components/product-detail.css');
 
+@import url('3_components/cart-list.css');
+@import url('3_components/cart-item.css');
+
 
 @import url('3_components/form-field.css');
 @import url('3_components/checkout-form.css');

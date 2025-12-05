@@ -102,41 +102,146 @@
           </nav>
         </div>
       </header>
-      <main class="product-detail section container">
-        <div class="product-detail__img">
-          <img src="./images/polo-react.png" alt="Polo React" />
-        </div>
-        <section class="product-detail__container">
-          <article class="product-detail__info">
-            <h2 class="product-detail__title">Polo React</h2>
-            <p class="product-detail__price">$20</p>
-            <p class="product-detail__description">
-              Viste tu pasión por React con estilo y comodidad en cada línea de
-              código.
-            </p>
-            <div class="product-detail__button-container">
-              <a
-                href="./cart.html"
-                class="button button--xl product-detail__button"
-              >
-                Agregar al carrito
-              </a>
+      <main class="main">
+        <section class="section-sm container cart-list">
+          <h2 class="cart__title">Carrito de compras</h2>
+          <div class="cart-list__container">
+            <div class="cart-list">
+              <article class="cart-item">
+                <div class="cart-item__img">
+                  <img src="./images/polo-react.png" alt="" width="" />
+                </div>
+                <div class="cart-item__info">
+                  <div class="cart-item-info__top">
+                    <h3 class="cart-item__title">Polo React</h3>
+                    <button class="button button--sm-icon button--outline">
+                      <svg
+                        width="17"
+                        height="19"
+                        viewBox="0 0 17 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 4.33333H16M14.3333 4.33333V16C14.3333 16.8333 13.5 17.6667 12.6667 17.6667H4.33333C3.5 17.6667 2.66667 16.8333 2.66667 16V4.33333M5.16667 4.33333V2.66667C5.16667 1.83333 6 1 6.83333 1H10.1667C11 1 11.8333 1.83333 11.8333 2.66667V4.33333M6.83333 8.5V13.5M10.1667 8.5V13.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cart-item-info__bottom">
+                    <p class="cart-item__price">$20</p>
+                    <div class="cart-item__quantity">
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4 10C4 9.58579 4.33579 9.25 4.75 9.25L15.25 9.25C15.6642 9.25 16 9.58579 16 10C16 10.4142 15.6642 10.75 15.25 10.75L4.75 10.75C4.33579 10.75 4 10.4142 4 10Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                      <span class="cart__item-quantity-display">1</span>
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.75 4.75C10.75 4.33579 10.4142 4 10 4C9.58579 4 9.25 4.33579 9.25 4.75V9.25H4.75C4.33579 9.25 4 9.58579 4 10C4 10.4142 4.33579 10.75 4.75 10.75L9.25 10.75V15.25C9.25 15.6642 9.58579 16 10 16C10.4142 16 10.75 15.6642 10.75 15.25V10.75L15.25 10.75C15.6642 10.75 16 10.4142 16 10C16 9.58579 15.6642 9.25 15.25 9.25H10.75V4.75Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="cart-item">
+                <div class="cart-item__img">
+                  <img src="./images/polo-react.png" alt="" width="" />
+                </div>
+                <div class="cart-item__info">
+                  <div class="cart-item-info__top">
+                    <h3 class="cart-item__title">Polo React</h3>
+                    <button class="button button--sm-icon button--outline">
+                      <svg
+                        width="17"
+                        height="19"
+                        viewBox="0 0 17 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 4.33333H16M14.3333 4.33333V16C14.3333 16.8333 13.5 17.6667 12.6667 17.6667H4.33333C3.5 17.6667 2.66667 16.8333 2.66667 16V4.33333M5.16667 4.33333V2.66667C5.16667 1.83333 6 1 6.83333 1H10.1667C11 1 11.8333 1.83333 11.8333 2.66667V4.33333M6.83333 8.5V13.5M10.1667 8.5V13.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cart-item-info__bottom">
+                    <p class="cart-item__price">$20</p>
+                    <div class="cart-item__quantity">
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4 10C4 9.58579 4.33579 9.25 4.75 9.25L15.25 9.25C15.6642 9.25 16 9.58579 16 10C16 10.4142 15.6642 10.75 15.25 10.75L4.75 10.75C4.33579 10.75 4 10.4142 4 10Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                      <span class="cart__item-quantity-display">1</span>
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.75 4.75C10.75 4.33579 10.4142 4 10 4C9.58579 4 9.25 4.33579 9.25 4.75V9.25H4.75C4.33579 9.25 4 9.58579 4 10C4 10.4142 4.33579 10.75 4.75 10.75L9.25 10.75V15.25C9.25 15.6642 9.58579 16 10 16C10.4142 16 10.75 15.6642 10.75 15.25V10.75L15.25 10.75C15.6642 10.75 16 10.4142 16 10C16 9.58579 15.6642 9.25 15.25 9.25H10.75V4.75Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
-          <article class="product-detail__characteristics">
-            <h3 class="product-detail__title-characteristics">
-              Caracteristicas
-            </h3>
-            <ul class="product-detail__list-characteristics">
-              <li>
-                Estampado resistente que mantiene sus colores vibrantes lavado
-                tras lavado
-              </li>
-              <li>Hecho de algodón suave que asegura comodidad y frescura.</li>
-              <li>Costuras reforzadas para una mayor durabilidad.</li>
-              <li>Corte moderno que se adapta perfectamente al cuerpo.</li>
-            </ul>
-          </article>
+            <div class="cart-list__total">
+              <p class="Cart__total-label">Total</p>
+              <p class="cart__total-amount">$65.00</p>
+            </div>
+            <div class="cart-list__button">
+              <button class="button button--xl">Continuar Compra</button>
+            </div>
+          </div>
         </section>
       </main>
       <footer class="main-footer">
