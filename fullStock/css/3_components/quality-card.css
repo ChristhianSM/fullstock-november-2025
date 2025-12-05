@@ -1,0 +1,33 @@
+.quality__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quality__card-icon {
+  margin-bottom: 1.5rem;
+}
+
+.quality__card-title {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.quality__card-description {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 40rem) {
+  /* .quality__card {
+    width: calc((100% - 2rem)/2);
+  } */
+}
+
+@media (min-width: 64rem) {
+  .quality__card {
+    flex: 1;
+  }
+}

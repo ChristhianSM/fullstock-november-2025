@@ -54,6 +54,8 @@ body {
   font-size: 2.5rem;
   letter-spacing: 2px;
   color: darkblue;
+
+  
 }
 
 .categories .categories__description {
@@ -77,3 +79,4 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+

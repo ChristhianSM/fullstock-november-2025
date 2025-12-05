@@ -1,0 +1,9 @@
+.category-catalog {}
+
+.category-catalog__title {
+  margin-bottom: 1rem;
+}
+
+.category-catalog__description {
+  margin-bottom: 2rem;
+}

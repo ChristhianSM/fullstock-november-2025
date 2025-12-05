@@ -1,0 +1,31 @@
+.cart-list {
+  max-width: 36rem;
+}
+
+.cart__title {
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  margin-bottom: 3rem;
+}
+
+.cart-list__container {
+  border: 1px solid var(--separator);
+  border-radius: .75rem;
+  /* padding: 1.5rem; */
+}
+
+.cart-list__total {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--separator);
+}
+
+.cart-list__button {
+  padding: 1.5rem;
+}
+
+.cart-list__button button {
+  width: 100%;
+}
