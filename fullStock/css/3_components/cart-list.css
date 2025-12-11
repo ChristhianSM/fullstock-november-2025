@@ -26,6 +26,7 @@
   padding: 1.5rem;
 }
 
-.cart-list__button button {
+.cart-list__button a {
+  text-align: center;
   width: 100%;
 }
