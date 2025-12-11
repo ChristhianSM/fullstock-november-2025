@@ -1,0 +1,8 @@
+.box {
+  height: 100px;
+  width: 100px;
+  background-color: lightcoral;
+  border: 1px solid darkred;
+  transform: translateX(40px);
+  transform: translateY(100px);
+}

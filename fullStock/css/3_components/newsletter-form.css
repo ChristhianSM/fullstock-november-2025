@@ -1,0 +1,33 @@
+.newsletter-form {
+  max-width: 28rem;
+}
+
+.newsletter-form-title {
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form-description {
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.newsletter__container-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.newsletter-form-email {
+  border: 1px solid var(--border);
+  height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  background-color: var(--background);
+  flex-grow: 1;
+}
+
+.newsletter-form-email:focus {
+  outline: 2px solid var(--outline);
+  border-color: var(--outline);
+  outline-offset: 1px;
+}

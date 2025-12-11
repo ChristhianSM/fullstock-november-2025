@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .hand {
+        font-size: 3em;
+        padding: 8px;
+        width: fit-content;
+        /* transform: translateX(-100%); */
+        /* animation: move 2s; */
+        animation: wave 2s;
+        animation-name: wave;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+        /* animation-iteration-count: infinite; */
+
+        animation: deslizar-entrada 2s;
+      }
+
+      .spinner {
+        width: 60px;
+        height: 60px;
+        border: 6px solid #ccc;
+        border-top-color: #3498db;
+        border-radius: 50%;
+        /* animation: girar 1s ease-in-out infinite;
+        animation-iteration-count: infinite; */
+      }
+
+      img {
+        display: block;
+      }
+
+      .container {
+        display: grid;
+        place-items: center;
+      }
+
+      .corazon {
+        width: 48px;
+        height: 48px;
+
+        animation: palpitar 3000ms ease-in-out infinite;
+      }
+
+      .typewriter h1 {
+        font-family: monospace;
+        font-size: 28px;
+        white-space: nowrap; /* No salta de línea */
+        overflow: hidden; /* Oculta el texto mientras se escribe */
+        border-right: 2px solid #000; /* Cursor */
+        width: 0; /* Punto de inicio */
+        /* animation: typing 4s steps(30) forwards, blinkCursor 0.7s infinite; */
+      }
+
+      .pulse-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+        background: #6200ff;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        animation: pulse 1s ease infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 400px;
+        } /* Ajusta al largo del texto */
+      }
+
+      /* Parpadeo del cursor */
+      @keyframes blinkCursor {
+        0% {
+          border-right-color: transparent;
+        }
+        50% {
+          border-right-color: black;
+        }
+        100% {
+          border-right-color: transparent;
+        }
+      }
+
+      @keyframes palpitar {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes girar {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes move {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+
+      @keyframes wave {
+        from {
+          transform: translateX(-100%) translateY(-100%) rotate(-60deg);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0%) translateY(0%) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      @keyframes deslizar-entrada {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+
+        40% {
+          transform: translateX(0%);
+          opacity: 1;
+        }
+
+        55% {
+          transform: rotate(30deg);
+        }
+        70% {
+          transform: rotate(0deg);
+        }
+        85% {
+          transform: rotate(30deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hand">👋🏼</div>
+    <div class="spinner"></div>
+    <div class="container">
+      <div class="corazon">
+        <svg viewBox="0 0 24 24" fill="tomato">
+          <path
+            d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="typewriter">
+      <h1>Bienvenido a mi sitio web</h1>
+    </div>
+    <button class="pulse-btn">Click aquí</button>
+  </body>
+</html>

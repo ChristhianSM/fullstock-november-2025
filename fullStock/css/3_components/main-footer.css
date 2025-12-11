@@ -1,0 +1,30 @@
+.main-footer {
+  width: 100%;
+}
+
+.main-footer__container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-top: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+}
+
+.main-footer__copyright {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+@media (min-width: 64rem) {
+  .main-footer__container {
+    flex-direction: row;
+  }
+
+  .footer__container-nav {
+      flex-wrap: nowrap;
+      flex: 1;
+  }
+}

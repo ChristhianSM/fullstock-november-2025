@@ -102,85 +102,149 @@
           </nav>
         </div>
       </header>
-      <main class="main content">
-        <section class="about__section about__main">
-          <h1 class="about__main-title">Quienes somos</h1>
-          <p class="about__text about__main-text">
-            ¡Bienvenido a Full Stock! Somos tu destino en línea para encontrar
-            una increíble variedad de productos que se adaptan a tu estilo de
-            vida. Nacimos de una idea simple: hacer que las compras en línea
-            sean una experiencia fácil, rápida y satisfactoria para todos.
-          </p>
-        </section>
-        <section class="about__section about__history">
-          <h2 class="about__history-title">Nuestra Historia</h2>
-          <p class="about__text">
-            Full Stock comenzó como un pequeño proyecto entre un grupo de
-            entusiastas de la tecnología y el buen diseño. Nos dimos cuenta de
-            que a menudo era difícil encontrar productos de calidad en un solo
-            lugar y con un servicio al cliente que realmente se preocupara.
-            Decidimos cambiar eso.
-          </p>
-          <p class="about__text">
-            Desde nuestro humilde comienzo, hemos crecido hasta convertirnos en
-            una tienda en línea con un catálogo en constante expansión, pero
-            nuestra misión principal sigue siendo la misma.
-          </p>
-        </section>
-
-        <section class="about__section about__mission">
-          <h2 class="about__mission-title">Nuestra Misión</h2>
-          <p class="about__text">
-            Nuestra misión es ofrecerte una selección cuidadosamente curada de
-            productos, combinada con una experiencia de compra sin
-            complicaciones. Queremos que cada visita a Full Stock sea
-            inspiradora y que cada compra te traiga satisfacción.
-          </p>
-        </section>
-
-        <section class="about__section about__values">
-          <h2 class="about__values-title">Nuestros Valores</h2>
-          <p class="about__text about__values-intro">
-            Creemos firmemente en los pilares que nos han guiado desde el primer
-            día:
-          </p>
-          <ul class="about__values-list">
-            <li class="about__values-item">
-              <strong class="about__values-title">Calidad Primero:</strong>
-              Seleccionamos productos que no solo se ven bien, sino que también
-              cumplen con nuestros estándares de calidad y durabilidad.
-            </li>
-            <li class="about__values-item">
-              <strong class="about__values-title"
-                >Pasión por el Cliente:</strong
+      <main class="main">
+        <section class="section-sm container cart-list">
+          <h2 class="cart__title">Carrito de compras</h2>
+          <div class="cart-list__container">
+            <div class="cart-list">
+              <article class="cart-item">
+                <div class="cart-item__img">
+                  <img src="./images/polo-react.png" alt="" width="" />
+                </div>
+                <div class="cart-item__info">
+                  <div class="cart-item-info__top">
+                    <h3 class="cart-item__title">Polo React</h3>
+                    <button class="button button--sm-icon button--outline">
+                      <svg
+                        width="17"
+                        height="19"
+                        viewBox="0 0 17 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 4.33333H16M14.3333 4.33333V16C14.3333 16.8333 13.5 17.6667 12.6667 17.6667H4.33333C3.5 17.6667 2.66667 16.8333 2.66667 16V4.33333M5.16667 4.33333V2.66667C5.16667 1.83333 6 1 6.83333 1H10.1667C11 1 11.8333 1.83333 11.8333 2.66667V4.33333M6.83333 8.5V13.5M10.1667 8.5V13.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cart-item-info__bottom">
+                    <p class="cart-item__price">$20</p>
+                    <div class="cart-item__quantity">
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4 10C4 9.58579 4.33579 9.25 4.75 9.25L15.25 9.25C15.6642 9.25 16 9.58579 16 10C16 10.4142 15.6642 10.75 15.25 10.75L4.75 10.75C4.33579 10.75 4 10.4142 4 10Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                      <span class="cart__item-quantity-display">1</span>
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.75 4.75C10.75 4.33579 10.4142 4 10 4C9.58579 4 9.25 4.33579 9.25 4.75V9.25H4.75C4.33579 9.25 4 9.58579 4 10C4 10.4142 4.33579 10.75 4.75 10.75L9.25 10.75V15.25C9.25 15.6642 9.58579 16 10 16C10.4142 16 10.75 15.6642 10.75 15.25V10.75L15.25 10.75C15.6642 10.75 16 10.4142 16 10C16 9.58579 15.6642 9.25 15.25 9.25H10.75V4.75Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="cart-item">
+                <div class="cart-item__img">
+                  <img src="./images/polo-react.png" alt="" width="" />
+                </div>
+                <div class="cart-item__info">
+                  <div class="cart-item-info__top">
+                    <h3 class="cart-item__title">Polo React</h3>
+                    <button class="button button--sm-icon button--outline">
+                      <svg
+                        width="17"
+                        height="19"
+                        viewBox="0 0 17 19"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 4.33333H16M14.3333 4.33333V16C14.3333 16.8333 13.5 17.6667 12.6667 17.6667H4.33333C3.5 17.6667 2.66667 16.8333 2.66667 16V4.33333M5.16667 4.33333V2.66667C5.16667 1.83333 6 1 6.83333 1H10.1667C11 1 11.8333 1.83333 11.8333 2.66667V4.33333M6.83333 8.5V13.5M10.1667 8.5V13.5"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="cart-item-info__bottom">
+                    <p class="cart-item__price">$20</p>
+                    <div class="cart-item__quantity">
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M4 10C4 9.58579 4.33579 9.25 4.75 9.25L15.25 9.25C15.6642 9.25 16 9.58579 16 10C16 10.4142 15.6642 10.75 15.25 10.75L4.75 10.75C4.33579 10.75 4 10.4142 4 10Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                      <span class="cart__item-quantity-display">1</span>
+                      <button class="button button--sm-icon button--outline">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M10.75 4.75C10.75 4.33579 10.4142 4 10 4C9.58579 4 9.25 4.33579 9.25 4.75V9.25H4.75C4.33579 9.25 4 9.58579 4 10C4 10.4142 4.33579 10.75 4.75 10.75L9.25 10.75V15.25C9.25 15.6642 9.58579 16 10 16C10.4142 16 10.75 15.6642 10.75 15.25V10.75L15.25 10.75C15.6642 10.75 16 10.4142 16 10C16 9.58579 15.6642 9.25 15.25 9.25H10.75V4.75Z"
+                            fill="#60646C"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="cart-list__total">
+              <p class="Cart__total-label">Total</p>
+              <p class="cart__total-amount">$65.00</p>
+            </div>
+            <div class="cart-list__button">
+              <a href="./checkout.html" class="button button--xl"
+                >Continuar Compra</a
               >
-              Tu satisfacción es nuestra máxima prioridad. Nuestro equipo está
-              siempre dispuesto a ayudarte y a asegurarse de que tu experiencia
-              sea excepcional.
-            </li>
-            <li class="about__values-item">
-              <strong class="about__values-title">Innovación Constante:</strong>
-              Estamos siempre buscando nuevas formas de mejorar nuestra
-              plataforma, nuestro catálogo y nuestros servicios para ofrecerte
-              lo mejor del mercado.
-            </li>
-            <li class="about__values-item">
-              <strong class="about__values-title">Simplicidad:</strong>
-              Creemos que comprar en línea debe ser un proceso sencillo y
-              directo, desde la búsqueda del producto hasta la - entrega en tu
-              puerta.
-            </li>
-          </ul>
+            </div>
+          </div>
         </section>
-
-        <p class="about__closing">
-          Gracias por elegir Full Stock. ¡Te invitamos a explorar
-          <!-- Todo: Agrega referencia correcta para 'nuestro catálogo'-->
-          <a href="#" target="_blank" rel="noopener noreferrer"
-            >nuestro catálogo</a
-          >
-          y descubrir todo lo que tenemos para ofrecer!
-        </p>
       </main>
       <footer class="main-footer">
         <div class="section-sm main-footer__container">

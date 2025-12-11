@@ -1,0 +1,46 @@
+@import url('1_foundation/tokens.css');
+@import url('1_foundation/reset.css');
+@import url('1_foundation/global.css');
+ 
+@import url('2_layout/container.css');
+@import url('2_layout/section.css');
+@import url('2_layout/section-sm.css');
+@import url('2_layout/vertical-page-layout.css');
+@import url('2_layout/sidebar-layout.css');
+ 
+@import url('3_components/button.css');
+@import url('3_components/main-header.css');
+@import url('3_components/main-nav.css');
+@import url('3_components/nav-item.css');
+@import url('3_components/hero.css');
+@import url('3_components/categories.css');
+@import url('3_components/category.css');
+@import url('3_components/quality-promise.css');
+@import url('3_components/quality-card.css');
+@import url('3_components/main-footer.css');
+@import url('3_components/links-group.css');
+@import url('3_components/newsletter-form.css');
+@import url('3_components/content.css');
+
+@import url('3_components/category-catalog.css');
+@import url('3_components/price-filter.css');
+@import url('3_components/products-grid.css');
+@import url('3_components/product.css');
+@import url('3_components/product-detail.css');
+
+@import url('3_components/cart-list.css');
+@import url('3_components/cart-item.css');
+
+@import url('3_components/form-field.css');
+@import url('3_components/checkout-form.css');
+
+
+@import url('3_components/order-confirmation.css');
+
+@import url('3_components/footer.css');
+
+@import url('4_utilities/utilities.css');
+
+@import url('5_pages/home.css');
+@import url('5_pages/terms.css');
+
