@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="title">Cambio de contenido con innerHTML</h1>
+    <div id="contenido">Contenido viejo...</div>
+    <script>
+      const divElement = document.querySelector("#contenido");
+      console.log(divElement.innerHTML);
+      // const nombre = "Christhian";
+      // setTimeout(() => {
+      //   divElement.innerHTML = `
+      //   <div class="imagen destacada" data-categoria="ciudad" data-visitas="120">
+      //     <img src="img2.jpg" alt="Nueva York">
+      //     <p class="titulo">Nueva York de noche</p>
+      //   </div>
+
+      //   `;
+      //   console.log(divElement.innerHTML);
+      // }, 3000);
+
+      // const title = document.querySelector("#title");
+      // console.log(title.textContent);
+      // setTimeout(() => {
+      //   title.textContent = "<h1> Hola Mundo </h1>";
+      // }, 4000);
+
+      console.log(divElement.outerHTML);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="productos" style="border: 1px solid red">
+      <div class="producto" data-id="1">
+        <h3>Producto 1 - $10</h3>
+        <button class="agregar">➕ Agregar</button>
+      </div>
+      <div class="producto" data-id="2">
+        <h3>Producto 2 - $15</h3>
+        <button class="agregar">➕ Agregar</button>
+      </div>
+    </div>
+
+    <div id="carrito">
+      <h3>Carrito (<span id="contador">0</span>)</h3>
+      <ul id="lista-carrito"></ul>
+      <p>Total: $<span id="total">0</span></p>
+    </div>
+
+    <script>
+      const products = document.querySelector("#productos");
+      const countProductsCart = document.querySelector("#contador");
+      const cartProducts = document.querySelector("#lista-carrito");
+      const totalHtml = document.querySelector("#total");
+
+      let cartProductsArray = [];
+
+      products.addEventListener("click", addProduct);
+
+      function addProduct(event) {
+        if (event.target.matches("button")) {
+          const product = event.target.parentElement;
+
+          const idProduct = product.dataset.id;
+          const h3Html = product.querySelector("h3").textContent;
+          const nameProduct = h3Html.split(" - ")[0];
+          const price = h3Html.split(" - ")[1];
+          const priceNumber = Number(price.replace("$", ""));
+
+          // verificamos si el producto existe en mi carrito
+          const indexProduct = cartProductsArray.findIndex(
+            (product) => product.id === idProduct,
+          );
+
+          if (indexProduct !== -1) {
+            cartProductsArray = cartProductsArray.map((product) => {
+              if (product.id === idProduct) {
+                return {
+                  ...product,
+                  quantity: product.quantity + 1,
+                };
+              }
+              return product;
+            });
+          } else {
+            const newProduct = {
+              id: idProduct,
+              name: nameProduct,
+              price: priceNumber,
+              quantity: 1,
+            };
+
+            cartProductsArray.push(newProduct);
+          }
+
+          console.log(cartProductsArray);
+
+          // Actualizar el contador y el total
+          updateCountProducts();
+          updateTotal();
+
+          // Mostramos los elementos del carrito de compras
+          showCartHtml();
+        }
+      }
+
+      function updateTotal() {
+        totalHtml.textContent = cartProductsArray.reduce(
+          (acc, current) => acc + current.price * current.quantity,
+          0,
+        );
+      }
+
+      function updateCountProducts() {
+        countProductsCart.textContent = cartProductsArray.length;
+      }
+
+      function showCartHtml() {
+        // Limpiar mi htmlPrevio
+        cartProducts.innerHTML = "";
+
+        // Mostrar los elementos del carrito en el html
+        cartProductsArray.forEach((product) => {
+          const { id, name, price, quantity } = product;
+
+          const li = document.createElement("li");
+          li.dataset.id = id;
+
+          const h3Product = document.createElement("h3");
+          h3Product.textContent = `${name} - $${price} - cantidad: ${quantity}`;
+
+          li.appendChild(h3Product);
+          cartProducts.append(li);
+          // console.log(divProduct);
+        });
+      }
+    </script>
+  </body>
+</html>

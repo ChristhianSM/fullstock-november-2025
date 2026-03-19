@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="border: 1px solid red">
+      <h1 style="margin: 0">Hola Mundo</h1>
+      <h2 style="border: 1px solid blue">Bienvenido</h2>
+    </div>
+
+    <a
+      href="https://classroom.codeable.la/fs-1125/program/fs/backend-mpa/backend-mpa-w5/backend-mpa-events"
+    >
+      Ir a codeable</a
+    >
+    <form action="">
+      <input type="text" />
+      <button type="submit">Ingresar</button>
+    </form>
+    <script>
+      const button = document.querySelector("div");
+      const a = document.querySelector("a");
+      const form = document.querySelector("form");
+
+      a.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log("Preevenimos el evento por defecto");
+      });
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log("Preevenimos el evento por defecto del formulario");
+      });
+
+      function primerHandlerButton(event) {
+        console.log(event.currentTarget, event.target);
+        console.log("primero");
+      }
+
+      function segundoHandlerButton(_event) {
+        console.log("Segundo");
+      }
+
+      function tercerHandlerButton() {
+        console.log("Tercero");
+      }
+
+      // button.onclick = primerHandlerButton;
+      // button.onclick = segundoHandlerButton;
+      // button.onclick = tercerHandlerButton;
+
+      button.addEventListener("click", primerHandlerButton);
+      button.addEventListener("click", segundoHandlerButton);
+      button.addEventListener("click", tercerHandlerButton);
+
+      button.addEventListener("click", () => {
+        console.log("Cuarto");
+      });
+
+      button.removeEventListener("click", segundoHandlerButton);
+    </script>
+  </body>
+</html>

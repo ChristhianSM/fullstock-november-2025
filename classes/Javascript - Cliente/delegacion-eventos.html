@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 480px;
+        gap: 8px;
+      }
+
+      .grid > div {
+        display: flex;
+        justify-content: center;
+        background-color: antiquewhite;
+        border: 1px solid tomato;
+        border-radius: 16px;
+        padding: 1rem;
+        transition: transform 300ms;
+      }
+
+      .remove {
+        transform: scale(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="card"><button>close 1</button></div>
+      <div class="card"><button>close 2</button></div>
+      <div class="card"><button>close 3</button></div>
+      <div class="card"><button>close 4</button></div>
+      <div class="card"><button>close 5</button></div>
+      <div class="card"><button>close 6</button></div>
+      <div class="card"><button>close 7</button></div>
+      <div class="card"><button>close 8</button></div>
+      <div class="card"><button>close 9</button></div>
+    </div>
+    <script>
+      // const buttons = document.querySelectorAll(".card");
+
+      // for (const button of buttons) {
+      //   button.addEventListener("click", function (event) {
+      //     const buttonHtml = event.target;
+      //     const divHtml = buttonHtml.parentElement;
+      //     console.log(divHtml);
+      //     divHtml.remove();
+      //   });
+      // }
+
+      const grid = document.querySelector(".grid");
+
+      grid.addEventListener("click", function (event) {
+        // Condicion cuando el usuario le da click a un boton
+        if (event.target.matches("button")) {
+          const divHtml = event.target.parentElement;
+          divHtml.classList.add("remove");
+
+          divHtml.addEventListener("transitionend", function () {
+            divHtml.remove();
+          });
+        }
+        // console.log(event.target);
+      });
+    </script>
+  </body>
+</html>

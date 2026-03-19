@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <label for="terms">Aceptas los términos y condiciones</label>
+    <input
+      type="checkbox"
+      id="terms"
+      name="terms1"
+      value="yes"
+      checked
+      mi-atributo="Hola"
+      atributo2="eliminar"
+    />
+
+    <div
+      class="div-style"
+      style="background-color: red; font-size: 16px; font-family: sans-serif"
+    >
+      Hola
+    </div>
+    <hr />
+    <hr />
+    <div
+      class="order"
+      data-order-id="abc123"
+      data-order-status="new"
+      data-id="1234"
+    >
+      Orden nueva
+    </div>
+
+    <script>
+      const label = document.querySelector("label");
+      const input = document.querySelector("input");
+
+      console.log(label.htmlFor);
+      console.log(input.type);
+      console.log(input.id);
+      console.log(input.name);
+      console.log(input.value);
+      console.log(input.checked);
+
+      // Obtener un atributo no estandar
+      const valueAttributeNotStandar = input.getAttribute("mi-atributo");
+      input.setAttribute("mi-atributo", "chaoooo");
+      const hasAttribute = input.hasAttribute("mi-atributo");
+      console.log("Existe el atributo: mi-atributo", hasAttribute);
+
+      if (!hasAttribute) {
+        input.removeAttribute("atributo2");
+      }
+      console.log(valueAttributeNotStandar);
+
+      input.checked = false;
+      input.type = "text";
+    </script>
+
+    <script>
+      console.log("===============================");
+      const div = document.querySelector(".div-style");
+      console.log(div.style);
+      console.log(div.style.backgroundColor);
+      console.log(div.style.fontSize);
+      console.log(div.style.fontFamily);
+
+      div.style.backgroundColor = "yellow";
+      div.style.fontSize = "34px";
+    </script>
+
+    <script>
+      const divOrder = document.querySelector(".order");
+      const dataset = divOrder.dataset;
+      const orderId = divOrder.dataset.orderStatus;
+      console.log(orderId);
+    </script>
+  </body>
+</html>

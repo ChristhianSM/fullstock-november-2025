@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="messages"></div>
+    <script>
+      const messages = document.querySelector(".messages");
+
+      // Creacion del elemento div
+      const divMessage = document.createElement("div");
+      divMessage.className = "message";
+
+      // divMessage.innerHTML = "<strong>Christhian: </strong> Este es un mensaje";
+
+      // messages.append(divMessage);
+
+      // Creacion del elemento strong
+      const strong = document.createElement("strong");
+      strong.textContent = "Christhian: ";
+
+      // Agregar el strong al div
+      divMessage.append(strong);
+      divMessage.append("Este es un mensaje");
+
+      // Agregar el div al contenedor messages
+      messages.append(divMessage);
+
+      // Creando otro div
+      const divMessage1 = document.createElement("div");
+      divMessage1.className = "message1";
+
+      const strong1 = document.createElement("strong");
+      strong1.textContent = "Joaquin: ";
+
+      // Agregar el strong al div
+      divMessage1.append(strong1);
+      divMessage1.append("Este es un mensaje 1");
+
+      // Agregar el div al contenedor messages
+      messages.append(divMessage1);
+
+      // Eliminacion de un elemento del DON
+      setTimeout(() => {
+        divMessage1.remove();
+      }, 3000);
+
+      console.log(divMessage, strong);
+      // messages.innerHTML =
+      //   "<div class='message'><strong>Christhian: </strong> Este es un mensaje</div>";
+    </script>
+  </body>
+</html>

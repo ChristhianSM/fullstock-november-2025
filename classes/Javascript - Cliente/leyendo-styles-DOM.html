@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      background-color: red;
+      font-size: 2rem;
+    }
+    .box {
+      padding: 1rem;
+      background-color: blue;
+    }
+  </style>
+  <body>
+    <div class="container box">Soy un div fachero</div>
+    <script>
+      const div = document.querySelector("div");
+      const styles = getComputedStyle(div);
+      console.log(div.style.backgroundColor);
+      console.log(styles.backgroundColor);
+      console.log(styles.fontSize);
+      console.log(styles.padding);
+    </script>
+  </body>
+</html>

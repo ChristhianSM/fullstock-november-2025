@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul></ul>
+    <script>
+      const ulHtml = document.querySelector("ul");
+      const fragment = new DocumentFragment();
+      const div = document.createElement("div");
+
+      const arrayLi = ["Item 1", "Item 2", "Item 3", "Item 4"];
+
+      arrayLi.forEach((li) => {
+        const liHtml = document.createElement("li");
+        liHtml.className = "item";
+        liHtml.textContent = li;
+
+        // div.append(liHtml);
+        fragment.append(liHtml);
+      });
+
+      console.log(fragment);
+      // console.log(div);
+      // ulHtml.append(div);
+      ulHtml.append(fragment); /*  */
+    </script>
+  </body>
+</html>

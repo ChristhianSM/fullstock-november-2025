@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        background-color: yellow;
+        padding: 1rem;
+        border: 1px solid red;
+        border-radius: 10px;
+      }
+
+      .box {
+        background-color: green;
+        padding: 1rem;
+        border: 1px solid red;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+      }
+
+      .active {
+        border: 5px solid brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box big">Hola soy una caja con estilos</div>
+
+    <script>
+      const body = document.querySelector("body");
+      const div = document.createElement("div");
+      div.textContent = "Hola soy un div";
+      div.className = "container";
+      // div.style.padding = "1rem";
+      // div.style.borderRadius = "10px";
+      // div.style.border = "1px solid red";
+      // div.style.backgroundColor = "yellow";
+
+      // obtenemos el div con la clase box
+      const box = document.querySelector(".box");
+      const classList = box.className.split(" ");
+
+      if (classList.includes("active")) {
+        const index = classList.indexOf("active");
+
+        classList.splice(index, 1);
+      } else {
+        classList.push("active");
+      }
+
+      box.className = classList.join(" ");
+
+      // Usando el classList
+      const classList1 = box.classList;
+      classList1.add("clase-nueva");
+      classList1.add("clase-nueva-2");
+
+      setTimeout(() => {
+        classList1.remove("clase-nueva-2");
+        classList1.remove("clase-nueva");
+        classList1.replace("big", "small");
+        classList1.toggle("active1");
+      }, 3000);
+      console.log(classList1);
+
+      // body.append(div);
+    </script>
+  </body>
+</html>
